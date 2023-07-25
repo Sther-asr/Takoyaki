@@ -1,0 +1,744 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Quicksand', sans-serif; scroll-behavior: smooth;}
+
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-RegularLigth.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-Regular.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-Medium.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-SemiBold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-LigthItalic.ttf) format(truetype);
+    font-style: italic;
+    font-weight: 300;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-RegularItalic.ttf) format(truetype);
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-MediumItalic.ttf) format(truetype);
+    font-style: italic;
+    font-weight: 500;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Font/Lato/Lato-SemiboldItalic.ttf) format(truetype);
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+/* HEADER---1366px----------------------HEADER---1366px*/
+
+/* Menu de navegacion */
+.menu{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 15%; 
+}
+img[alt="logo-blanco"]{height: 6em;}
+.navegacion{font-size: 135%; width: 70%;}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* border: 1px solid #C23600; */
+}
+.nav-item{text-decoration: none; color: white;}
+.contacto-item { border: 3px solid #C23600; padding: 8px 8px; }
+
+/* Portada */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+    color: white;
+    text-align: center;
+}
+.header-item{margin-top: 0.5em;}
+
+/* Titulo */
+.titulo{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 180%;
+}
+.titulo img{height: 0.8em;}
+.titulo-item{margin: 0 0.25em;}
+
+/* Frase dejabo del título */
+.frase{ display: flex; justify-content: center; align-items: center;}
+.frase p{ color: white; font-size: 200%; font-weight: 700; 
+    font-family: Lato; font-style: italic; letter-spacing: 1px;
+}
+.frase .titulo-index{font-size: 150%;}
+.frase-item{margin: 0 0.5em;}
+.frase img{height: 0.4em;}
+
+/* Primera flecha */
+.flecha img[alt^="flechas"]{height: 1.5em;}
+.flecha{
+    background-color:white;
+    position: absolute;
+    box-sizing: content-box;
+    text-align: center;
+    border-radius: 100%;
+    padding: 1.3em 0;
+    width: 9em;
+    height: 6em;
+    top:0;
+    left: 48.9%;
+    margin: -3.5em
+}
+
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: flex-start;
+    align-items: center;
+    height: 52vh;
+    position: relative;
+    background-color: #1E2B33;
+}
+.footer-flecha img[alt^="flechas"]{height: 1.5em;}
+.footer-flecha{
+    width: 9em;
+    height: 6em;
+    background-color: #1E2B33;
+    border-radius: 100%;
+    box-sizing: content-box;
+    text-align: center;
+    padding: 1.3em 0;
+    margin-top: -2.5em;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60%;
+    padding: 0 5em;
+}
+.info-redes,.info-logo,.info-info{ width: 33.33%;}
+.info-redes p{color: white; font-size: 170%; font-weight: 700;}
+.info-redes img{height: 1.5em;}
+.info-redes-1,.info-redes-2{margin-bottom: 1em;}
+.info-redes-item{margin: 0 5px;}
+
+.info-logo{width: 20%; height: 70%; margin-top: -2em;}
+
+.info-info img{height: 1.5em;}
+/* Cosas que analizar más tarde */
+.info-item{width: 100%;display: flex;justify-content: space-between;margin: 0.5em 0;}
+.info-info p{text-align: left; font-size: 130%; width: 80%;}
+.info-item p{color: white; font-size: 150%; font-weight: 500;}
+/* Cosas que analizar más tarde */
+.info-item{margin-bottom: 1em;}
+.footer-copyright{
+    background-color: #C23600;
+    padding: 1em 5em;
+    width: 100%;
+    height: 16%;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 500;
+    /* padding: 1em 0; */
+    /* line-height: 300%; */
+}
+
+
+
+
+
+/* PAGINA PRINCIPAL--------------------------------PAGINA PRINCIPAL---------------------------PAGINA PRINCIPAL */
+.home{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+    url(../Imagenes/daniel-apodaca-sfldz1LjzNY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+}
+.header .redes img[alt$="icon"]{height: 1.6em; margin: 1em 0.5em;}
+
+/* HISTORIA */
+.historia{ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1em 5em;
+    /* align-items: center; */
+    position: relative;
+    height: 130vh;
+}
+.story{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:space-evenly; 
+    height: 80%;
+}
+.story-titulo,.story-frase,.story-story{
+    /* border: 1px solid #C23600; */
+     margin-bottom: 10px;}
+
+.story-titulo{color: #C23600; font-size: 300%; font-weight: 500; width: 100%;}
+.story-frase{color: #8E532D; font-family: Lato; font-size: 150%; font-style: italic; width: 100%;}
+.story-story{ 
+    display: flex; 
+    text-align: left; 
+    justify-content: space-between; 
+    height: 80%; 
+    align-items: center;
+
+}
+/* .story-txt,.story-img{border: 1px solid #C23600;} */
+.story-img{width: 48%; height: 90%;}
+.story-txt{width: 48%;  font-size: 150%; color: black; }
+.story-txt p{margin: 0.6em 0; font-family: Lato; font-weight: 300;}
+
+/* MARQUEE */
+.marquee{
+    background-image: url(../Imagenes/kazuo-ota-sF90YT-7ovI-unsplash-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.marquee marquee{
+    background-color: #C23600;
+    font-size: 160%;
+    font-weight: 500;
+    padding: 1em 0;
+    height: 12%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+    /* line-height: 300%; */
+}
+
+/* STAFF */
+.staff{
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 1em 5em;
+}
+.staff-item{ margin-top: 0.5em;}
+.staff h2{
+    color: #C23600;
+    font-size: 300%;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+.staff> p{
+    width: 100%;
+    text-align: center;
+    color: #8E532D; 
+    font-family: Lato; 
+    font-size: 150%; 
+    font-weight: 400; 
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+.staff-equipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 68%;
+    width: 100%;
+}
+.equipo{ width: 25%; height: 48%;text-align: center;}
+.equipo img[alt="chef"]{height: 60%;margin: 0.5em;border-radius: 100%;}
+.equipo>h3{ color: #C23600;font-size: 170%;font-weight: 500;}
+.equipo>p{ color: #8E532D;font-family: Lato;font-style: italic;font-weight: 400;font-size: 130%;}
+
+
+/* PAGINA DE CONTACTO------------------------PAGINA DE CONTACTO--------------------------PAGINA DE CONTACTO*/
+.contactanos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+    url(../Imagenes/baiq-daling-vuZJ1VRHNF4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* UBICACIÓN */
+.ubicacion{
+    text-align: center;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.ubicacion h2{color: #C23600; font-size: 300%; font-weight: 500; width: 100%; z-index: 0;}
+.ubicacion p{ color: #8E532D; font-family: Lato; font-size: 150%; font-style: italic; width: 100%;}
+.ubicacion-item iframe{width: 100%; margin-top: 1em;}
+
+/* MARQUESINA */
+.marquee-ubicacion{
+    background-image: url(../Imagenes/COVID-CONTACTOS.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.marquee-ubicacion marquee{
+    background-color: #C23600;
+    font-size: 160%;
+    font-weight: 500;
+    padding: 1em 0;
+    height: 12%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+    /* line-height: 300%; */
+}
+
+/* FORMULARIO */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 5em;
+    height: 120vh;
+}
+.formulario h2{color: #C23600; font-size: 300%; font-weight: 500;}
+.formulario p{color: #8E532D; font-size: 150%; font-family: Lato; font-style: italic; }
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 64%;
+    margin-top: 1em;
+}
+.formulario-campo{
+    font-size: 150%;
+    font-weight: 500;
+    width: 75%; 
+    height: 15%; 
+    border-style: none;
+    outline: none;
+    background-color: #E6E6E6;
+    margin: 0.5em 0;
+    padding-left: 0.6em;
+}
+.campo-msj{ height: 30%;}
+.campo-enviar{width: 24%; padding: 0; margin-top: 1em; height: 12%; 
+    background-color: #C23600; color: white; font-weight: 700; 
+    text-transform: uppercase;
+}
+
+
+/* PAGINA DE RESERVACIÓN-----------------------PAGINA DE RESERVACIÓN---------------------PAGINA DE RESERVACIÓN */
+.reservacion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+    url(../Imagenes/couple-taking-selfie-while-having-sushi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+}
+/* Formulario */
+.reservacion-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 5em;
+    height: 100vh;
+    position: relative;
+}
+/* .reservacion-item{border: 1px solid #1E2B33;} */
+/* .reservacion-form{border: 1px solid #C23600;} */
+.reservacion-formulario h2{color: #C23600; font-size: 300%; font-weight: 500;}
+.reservacion-formulario p{color: #8E532D; font-size: 150%; font-family: Lato; font-style: italic; }
+.reservacion-formulario form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 65%;
+    margin-top: 2em;
+}
+.reservacion-form{width: 45%; height: 60%; text-align: left;}
+.reservacion-form h3{color: #C23600; font-size: 180%; font-weight: 500; padding: 0.5em 0;}
+.form-campo{
+    font-size: 150%;
+    font-weight: 500;
+    width: 100%; 
+    height: 18%; 
+    border-style: none;
+    outline: none;
+    background-color: #E6E6E6;
+    margin: 0.5em 0;
+    padding: 0 0.6em;
+    margin: 0.5em 0;
+}
+.campo-enviar{width: 24%; padding: 0; margin-top: 1em; height: 12%; background-color: #C23600; 
+    color: white; font-weight: 700; text-transform: uppercase; text-align: center;
+}
+
+/* MARQUESINA */
+.marquee-reservacion{
+    background-image: url(../Imagenes/side-view-male-chef-with-mask-cutting-chicken_2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 12%;
+}
+.marquee-reservacion marquee{
+    background-color: #C23600;
+    font-size: 160%;
+    font-weight: 500;
+    padding: 1em 0;
+    height: 12%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+}
+
+/* Horario */
+.horario{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)),
+    url(../Imagenes/louis-hansel-8FWQQXMspEM-unsplash.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/* .horario-item{border: 1px solid #C9A333;} */
+.horario h2, .horario .horas,.horario .tlf{color: white; font-size: 300%; font-weight: 500;}
+.horario .tlf{color: #C9A333;}
+.horario .horas{font-weight: 700;}
+.horario .dias, .horario .a{color: #C9A333; font-size: 200%; font-weight: 700;}
+.horario .dias{margin-bottom: 1em; text-transform: uppercase;}
+.apertura{display: flex; justify-content: space-evenly;
+    /* border: 1px solid #E6E6E6;  */
+    height: 40%; align-items: center;
+}
+
+
+
+
+
+/* PAGINA DE MENÚ--------------------------PAGINA DE MENÚ-------------------------------PAGINA DE MENÚ */
+.carta{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+    url(../Imagenes/jakub-dziubak-iOHJKJqO6E0-unsplash.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+}
+/* Marquesina */
+.marquee-menu{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.div-marquesina-menu{
+    background-image: url(../Imagenes/Covid-menú.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 12%;
+}
+.marquee-menu marquee{
+    background-color: #C23600;
+    font-size: 160%;
+    font-weight: 500;
+    padding: 1em 0;
+    height: 15%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+}
+
+/* Platillos */
+.platillos{
+    position: relative;
+    padding: 1em 5em;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+}
+.platillos-item{ 
+    /* border: 1px solid #C23600; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40%; 
+    width: 40%;
+    margin: 2em 0;
+    overflow: hidden;
+}
+.platillos-item img{
+    height: 58%; width: 100%;
+    margin-bottom: 0.5em;
+}
+.platillos-item h3, .platillos-item p{padding: 6px; 
+    /* border: 1px solid #1E2B33; */
+}
+.platillos-item h3{
+    color: #C23600; font-weight: 700; font-size: 200%;height: 12%; 
+    line-height: 140%;
+}
+.platillos-item .descripcion{
+    font-family: Lato; font-style: italic; font-weight: 400;
+    font-size: 120%; color: #8E532D; height: 20%;
+}
+.platillos-item .precio{
+    color: #C23600; font-size: 170%; font-weight: 500; text-align: right; height: 10%;
+}
+
+
+
+
+/* PAGINA DE SERVICIOS----------------------PAGINA DE SERVICIOS-------------------------------PAGINA DE SERVICIOS */
+.servicios{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+    url(../Imagenes/Le-Blossom-A-Japanese-Restaurant-Design-by-Ménard-Dworkind-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+}
+/* MARQUESINA */
+.marquee-servicios{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.div-marquesina{
+    background-image: url(../Imagenes/food-delivery-boy-driving-scooter-with-box-with-food-wearing-mask_2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 12%;
+}
+.marquee-servicios marquee{
+    background-color: #C23600;
+    font-size: 160%;
+    font-weight: 500;
+    padding: 1em 0;
+    height: 15%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+}
+
+/* ESPECIALES */
+.especiales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 5em;
+    height: 265vh;
+}
+.platillos-especiales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 26%;
+    width: 60%;
+    margin: 4em 0;
+    /* border: 1px solid #1E2B33; */
+}
+/* .titulo-especiales,.descripcion-especiales,.dinero-especiales{border: 1px solid #C23600;} */
+
+.platillos-especiales img{height: 65%; width: 100%; margin-top: 1em;}
+.platillos-especiales h3{color: #C23600; font-size: 400%; font-weight: 500;}
+.platillos-especiales .descripcion-especiales{color: #8E532D;
+    font-family: Lato;font-style: italic;font-size: 160%; 
+}
+.platillos-especiales .dinero-especiales{ color: #C23600; 
+    font-size: 160%; font-weight: 700; margin-top: 0.5em;
+}
+
+
+/* PAGINA DE OFERTAS--------------------------PAGINA DE OFERTAS----------------------------PAGINA DE OFERTAS */
+.ofertas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)),
+    url(../Imagenes/Header_Ofertas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+}
+/* MARQUESINA */
+.marquee-ofertas{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.div-marquesina-ofertas{
+    background-image: url(../Imagenes/Ofertas-Covid.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: 12%;
+}
+.marquee-ofertas marquee{
+    background-color: #C23600;
+    font-size: 160%;
+    font-weight: 500;
+    padding: 1em 0;
+    height: 15%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+}
+
+
+/* Ofertas */
+.carta-ofertas{
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 220vh;
+}
+.oferta-item{
+    width: 80%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    /* border: 1px solid #1E2B33; */
+    /* margin: 4em 0; */
+}
+.oferta-item h3{color: #C23600; font-size: 300%; font-weight: 500; width: 100%;}
+.oferta-item .oferta-frase{color: #8E532D; font-size: 150%; font-family: Lato; font-style: italic; width: 100%;}
+.oferta1{height: 28%;}
+.oferta2{height: 52%;}
+
+.oferta-plato{ 
+    display: flex; 
+    justify-content: center; 
+    text-align: left; 
+    width: 100%;
+}
+.oferta-plato img{height: 100%; width: 60%;}
+.oferta1 .oferta-plato{height: 70%;}
+.oferta2 .oferta-plato{ height: 38%;}
+
+/* .hola{border: 1px solid #C9A333; margin: 1.5em 0;} */
+.rojo{
+    background-color: #C23600;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly ;
+    padding: 0 2em; 
+    color: white; 
+    width: 40%;
+}
+/* .rojo h4, .rojo p{border: 1px solid white;} */
+.rojo h4{font-size: 300%; font-weight: 500;}
+.rojo .descripcion-plato, .rojo .nota{font-family: Lato; font-style: italic; font-size: 150%; height: 38%;}
+.rojo .nota{height: 10%;}
+.rojo .promocion{ font-size: 200%; font-weight: 700; text-align: right;}
